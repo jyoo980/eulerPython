@@ -14,11 +14,7 @@ def sum_3_5(n):
 # =====================================
 
 def my_map(f, lox):
-  result = []
-  for x in lox:
-    result.append(f(x))
-
-  return result
+  return [f(x) for x in lox]
 
 # ========================================
 # PROBLEM:
