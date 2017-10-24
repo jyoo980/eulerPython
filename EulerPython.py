@@ -33,4 +33,30 @@ def my_filter(f, lox)
 
   return result
 
+# =========================================================================
+# PROBLEM:
+# Design a function which determines whether a given string is a palindrome
+# =========================================================================
+
+def palindrome(str):
+  if len(str) <= 1:
+    return True
+  else:
+    start = 0
+    end = len(str) - 1
+
+    while end > start:
+      if str[end] != str[start]:
+        return False
+
+      end -= 1
+      start += 1
+
+    return True
+
+
+
+
+
+
 
