@@ -8,9 +8,29 @@ def sum_3_5(n):
   filter(lambda elt: elt % 3 == 0 or elt % 5 == 0, 
   range(1, n + 1))))
 
-# ===============================================================
+# =====================================
 # PROBLEM:
-# Find the difference between the sum of the squares of the first  
-# one hundred natural numbers and the square of the sum.  
-# ===============================================================
+# Design your own implementation of map
+# =====================================
+
+def my_map(f, lox):
+  result = []
+  for x in lox:
+    result.append(f(x))
+
+  return result
+
+# ========================================
+# PROBLEM:
+# Design your own implementation of filter
+# ========================================
+
+def my_filter(f, lox)
+  result = []
+  for x in lox:
+    if f(x) is True:
+      result.append(x)
+
+  return result
+
 
