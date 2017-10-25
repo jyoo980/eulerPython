@@ -73,3 +73,19 @@ def interleave(list1, list2):
 
   return interleaved
 
+
+def binary_search(array, target, num_items):
+  return search_helper(array, target, 0, num_items - 1)
+
+def search_helper(array, target, begin_index, end_index):
+  mid_index = begin_index + (end_index - begin_index) / 2
+
+  if begin_index > end_index:
+    return -1
+  elif array[mid_index] == target:
+    return mid_index
+  elif array[mid
+
+
+
+
