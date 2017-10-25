@@ -1,7 +1,7 @@
-# =====================================================
+# ======================================================
 # PROBLEM:
 # Find the sum of all the multiples of 3 or 5 below 1000 
-# =====================================================
+# ======================================================
 
 def sum_3_5(n):
   return int(reduce((lambda num, sum: num + sum), 
@@ -29,9 +29,13 @@ def my_filter(f, lox)
 
   return result
 
+# Alternatively, one could also do:
+# def my_filter(f, lox):
+#   return [f(x) if f(x) is True for x in lox]
+
 # =========================================================================
 # PROBLEM:
-# Design a function which determines whether a given string is a palindrome
+# Design a function which determines whether a given string is a palindrom
 # =========================================================================
 
 def palindrome(str):
@@ -49,10 +53,5 @@ def palindrome(str):
       start += 1
 
     return True
-
-
-
-
-
 
 
