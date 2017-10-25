@@ -54,4 +54,22 @@ def palindrome(str):
 
     return True
 
+# =============================================
+# PROBLEM:
+# Design a function which interleaves two lists
+# =============================================
+
+def interleave(list1, list2):
+  interleaved = []
+  index = 0
+
+  while len(list1) != 0 or len(list2) != 0:
+    if len(list1) != 0:
+      interleaved.append(list1[index])
+    if len(list2) != 0:
+      interleaved.append(list2[index])
+    
+    index += 1
+
+  return interleaved
 
